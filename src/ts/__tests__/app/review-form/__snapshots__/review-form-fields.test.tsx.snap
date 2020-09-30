@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewFormFields should render the fields for the review form 1`] = `
+<form
+  className="review-form"
+  onSubmit={[Function]}
+>
+  <label
+    htmlFor="review-form-name"
+  >
+    Name
+  </label>
+  <input
+    id="review-form-name"
+    name="name"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <label
+    htmlFor="review-form-email"
+  >
+    Email
+  </label>
+  <input
+    id="review-form-email"
+    name="email"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <label
+    htmlFor="review-form-rating"
+  >
+    Rating
+  </label>
+  <input
+    id="review-form-rating"
+    name="rating"
+    onChange={[Function]}
+    value={0}
+  />
+  <label
+    htmlFor="review-form-comment"
+  >
+    Comment
+  </label>
+  <input
+    id="review-form-comment"
+    name="comment"
+    onChange={[Function]}
+    value=""
+  />
+  <input
+    type="submit"
+    value="Submit"
+  />
+</form>
+`;
