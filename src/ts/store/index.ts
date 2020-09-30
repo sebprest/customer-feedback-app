@@ -1,5 +1,7 @@
 import { createStore, combineReducers } from "redux";
 
-const rootReducer = combineReducers({});
+import { review } from "^/app/review-form/reducers";
+
+const rootReducer = combineReducers({ review });
 
 export const store = createStore(rootReducer);
