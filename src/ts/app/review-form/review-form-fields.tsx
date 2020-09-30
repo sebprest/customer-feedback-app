@@ -22,6 +22,7 @@ export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
     const onAddReview = (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       props.addReview(values);
+      setValues(() => defaultValues);
     };
 
     return (
