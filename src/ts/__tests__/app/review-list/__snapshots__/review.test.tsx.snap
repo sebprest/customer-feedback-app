@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Review should render the details for the provided review  1`] = `
+<div
+  className="review"
+>
+  fake name
+   (
+  fake email
+  ) - Rating: 
+  5
+  :
+  <div
+    className="review-comment"
+  >
+    fake comment
+  </div>
+</div>
+`;
