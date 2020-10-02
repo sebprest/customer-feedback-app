@@ -38,10 +38,12 @@ exports[`ReviewFormFields should render the fields for the review form 1`] = `
   </label>
   <input
     id="review-form-rating"
+    max={5}
+    min={1}
     name="rating"
     onChange={[Function]}
-    value={0}
     required={true}
+    value={0}
   />
   <label
     htmlFor="review-form-comment"

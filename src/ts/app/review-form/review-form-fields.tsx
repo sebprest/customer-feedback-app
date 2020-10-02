@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 
 import { Review } from "^/common/types";
-import { REVIEW_FORM_FIELD_IDS } from "./constants";
+import {
+  MAXIMUM_REVIEW_RATING,
+  MINIMUM_REVIEW_RATING,
+  REVIEW_FORM_FIELD_IDS,
+} from "./constants";
 
 type Props = {
   addReview: (newReview: Review) => void;
@@ -52,6 +56,8 @@ export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
           value={values.rating}
           onChange={handleInputChange}
           required
+          min={MINIMUM_REVIEW_RATING}
+          max={MAXIMUM_REVIEW_RATING}
         />
         <label htmlFor={REVIEW_FORM_FIELD_IDS.comment}>Comment</label>
         <input
