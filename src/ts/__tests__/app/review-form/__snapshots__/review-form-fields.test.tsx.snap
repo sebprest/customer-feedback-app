@@ -14,6 +14,7 @@ exports[`ReviewFormFields should render the fields for the review form 1`] = `
     id="review-form-name"
     name="name"
     onChange={[Function]}
+    required={true}
     type="text"
     value=""
   />
@@ -26,6 +27,7 @@ exports[`ReviewFormFields should render the fields for the review form 1`] = `
     id="review-form-email"
     name="email"
     onChange={[Function]}
+    required={true}
     type="text"
     value=""
   />
@@ -39,6 +41,7 @@ exports[`ReviewFormFields should render the fields for the review form 1`] = `
     name="rating"
     onChange={[Function]}
     value={0}
+    required={true}
   />
   <label
     htmlFor="review-form-comment"
@@ -49,6 +52,7 @@ exports[`ReviewFormFields should render the fields for the review form 1`] = `
     id="review-form-comment"
     name="comment"
     onChange={[Function]}
+    required={true}
     value=""
   />
   <input

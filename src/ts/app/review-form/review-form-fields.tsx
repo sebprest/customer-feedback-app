@@ -34,6 +34,7 @@ export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
           name="name"
           value={values.name}
           onChange={handleInputChange}
+          required
         />
         <label htmlFor={REVIEW_FORM_FIELD_IDS.email}>Email</label>
         <input
@@ -42,6 +43,7 @@ export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
           name="email"
           value={values.email}
           onChange={handleInputChange}
+          required
         />
         <label htmlFor={REVIEW_FORM_FIELD_IDS.rating}>Rating</label>
         <input
@@ -49,6 +51,7 @@ export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
           name="rating"
           value={values.rating}
           onChange={handleInputChange}
+          required
         />
         <label htmlFor={REVIEW_FORM_FIELD_IDS.comment}>Comment</label>
         <input
@@ -56,6 +59,7 @@ export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
           name="comment"
           value={values.comment}
           onChange={handleInputChange}
+          required
         />
         <input type="submit" value="Submit" />
       </form>
