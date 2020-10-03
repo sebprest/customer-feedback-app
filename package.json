@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest --coverage",
     "build": "webpack --mode production",
+    "build-less": "lessc src/less/index.less dist/css/bundle.css",
     "watch": "webpack --mode development --watch",
     "prettier": "prettier --write '**/*.{ts,tsx}'"
   },
@@ -25,6 +26,7 @@
     "enzyme-adapter-react-16": "^1.15.5",
     "html-webpack-plugin": "^4.5.0",
     "jest": "^26.4.2",
+    "less": "^3.12.2",
     "prettier": "^2.1.2",
     "react-test-renderer": "^16.13.1",
     "ts-jest": "^26.4.1",
@@ -34,6 +36,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
