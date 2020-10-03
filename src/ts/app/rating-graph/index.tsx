@@ -14,12 +14,14 @@ type Props = StateProps;
 export const RatingGraph: React.FunctionComponent<Props> = React.memo(
   (props) => {
     return (
-      <ResponsiveContainer>
-        <LineChart data={props.reviews} margin={{ top: 5 }}>
-          <YAxis />
-          <Line type="monotone" dataKey={"rating"} animationDuration={0} />
-        </LineChart>
-      </ResponsiveContainer>
+      <div className="rating-graph">
+        <ResponsiveContainer>
+          <LineChart data={props.reviews}>
+            <YAxis />
+            <Line type="monotone" dataKey={"rating"} animationDuration={0} />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
     );
   }
 );

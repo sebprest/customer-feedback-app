@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RatingGraph should render a graph displaying data about the provided reviews 1`] = `
-<div>
-  ResponsiveContainer
+<div
+  className="rating-graph"
+>
+  <div>
+    ResponsiveContainer
+  </div>
 </div>
 `;
