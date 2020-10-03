@@ -51,6 +51,7 @@ export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
         />
         <label htmlFor={REVIEW_FORM_FIELD_IDS.rating}>Rating</label>
         <input
+          type="number"
           id={REVIEW_FORM_FIELD_IDS.rating}
           name="rating"
           value={values.rating}

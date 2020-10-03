@@ -43,6 +43,7 @@ exports[`ReviewFormFields should render the fields for the review form 1`] = `
     name="rating"
     onChange={[Function]}
     required={true}
+    type="number"
     value={0}
   />
   <label
