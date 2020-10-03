@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+
+  @media all and (min-width: @sm) {
+    width: @sm;
+  }
+
+  @media all and (min-width: @md) {
+    width: @md;
+  }
+
+  @media all and (min-width: @lg) {
+    width: @lg;
+  }
+}
+
+.col {
+  float: left;
+
+  /* In the interest of time, I am declaring these manually.
+   * Ideally, I would write a function to generate these rules */
+  &.col-4-md {
+    @media all and (min-width: @md) {
+      width: 33%;
+    }
+  }
+
+  &.col-8-md {
+    @media all and (min-width: @md) {
+      width: 66%;
+    }
+  }
+}
