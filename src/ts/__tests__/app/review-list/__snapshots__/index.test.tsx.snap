@@ -4,6 +4,11 @@ exports[`ReviewList should render a review component for each review provided 1`
 <div
   className="review-list"
 >
+  <h2>
+    All reviews (
+    1
+    ):
+  </h2>
   <div
     review={
       Object {
