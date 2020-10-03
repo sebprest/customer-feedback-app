@@ -23,6 +23,6 @@ module.exports = {
         path: path.resolve(__dirname, './dist/js'),
     },
     plugins: [
-        new HtmlWebpackPlugin({title: "Customer service page", template: "src/index.html"})
+        new HtmlWebpackPlugin({title: "Customer service page", template: "src/index.html", filename: "../index.html"})
     ]
 }
