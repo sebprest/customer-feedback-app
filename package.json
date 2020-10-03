@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "test": "jest --coverage",
-    "build": "webpack --production",
-    "watch": "webpack --development --watch",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
     "prettier": "prettier --write '**/*.{ts,tsx}'"
   },
   "keywords": [],
