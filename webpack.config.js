@@ -22,6 +22,9 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, './dist/js'),
     },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+    },
     plugins: [
         new HtmlWebpackPlugin({title: "Customer service page", template: "src/index.html", filename: "../index.html"})
     ]
