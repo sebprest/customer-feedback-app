@@ -58,6 +58,7 @@ exports[`ReviewFormFields should render the fields for the review form 1`] = `
     value=""
   />
   <input
+    className="button"
     type="submit"
     value="Submit"
   />

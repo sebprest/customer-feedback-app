@@ -67,7 +67,7 @@ export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
           onChange={handleInputChange}
           required
         />
-        <input type="submit" value="Submit" />
+        <input className="button" type="submit" value="Submit" />
       </form>
     );
   }
