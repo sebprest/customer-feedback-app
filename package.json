@@ -6,9 +6,10 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "test": "jest --coverage",
-    "build": "webpack --mode production",
+    "build": "npm run build-js && npm run build-less",
+    "build-js": "webpack --mode production",
     "build-less": "lessc src/less/index.less dist/css/bundle.css",
-    "watch": "webpack --mode development --watch",
+    "watch-js": "webpack --mode development --watch",
     "prettier": "prettier --write '**/*.{ts,tsx}'"
   },
   "keywords": [],
