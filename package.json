@@ -1,7 +1,7 @@
 {
   "name": "customer-feedback-page",
   "version": "1.0.0",
-  "description": "A minimal web app build with TypeScript and React",
+  "description": "A web app built with TypeScript and React",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode development",
