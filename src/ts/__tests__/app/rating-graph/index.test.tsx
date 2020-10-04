@@ -6,7 +6,7 @@ jest.mock("recharts", () => ({
     <div {...props}>ResponsiveContainer</div>
   ),
 }));
-import React, { ReactNode } from "react";
+import React from "react";
 import renderer from "react-test-renderer";
 
 import { FAKE_REVIEW } from "^/__tests__/__helpers__/fake-review";
