@@ -31,6 +31,18 @@ npm run build
 npm start
 ```
 
+## Design notes
+
+### Comments
+
+I have opted not to include any comments in the source code offering explanations of specific functions, variables or classes. This is an intentional decision that is a consequence of my belief that good code should be [_self-documenting_](https://en.wikipedia.org/wiki/Self-documenting_code). That is to say, various features of the codebase itself, such as the directory structure, architecture, [identifiers](https://en.wikipedia.org/wiki/Identifier_(computer_languages)), and logic should be constructed in such a way that any individual part of that codebase can be easily understood by reading the code itself, therefore eliminating the need for natural language explanations within the code.
+
+### Directory structure
+
+A common pattern for small codebases is to separate files by what they _are_, as in `components`, `types`, `reducers`, etc. While a codebase organised in this way can be effective in a small-scale project, it can easily become overwhelming as the number of files increases, which goes against my [previous point](#comments) about comments.
+
+Instead, I have chosen a directory structure that separates files based on what they _do_. Having a directory for each component where the primary logic lives alongside all supporting files improves scalability and promotes [modularity](https://en.wikipedia.org/wiki/Modular_programming) and [loose coupling](https://en.wikipedia.org/wiki/Coupling_(computer_programming)).
+
 ## Potential improvements
 
 ### Form validation
