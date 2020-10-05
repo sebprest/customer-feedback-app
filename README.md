@@ -47,6 +47,10 @@ Webpack offers various features to minimise the size of the outputted JS bundle,
 
 Clear and consistent visual design is central to a positive user experience. While visual flair is clearly missing from this project, I have done my best to implement styles that are functional and maintainable.
 
+### User experience considerations
+
+At the moment, the `rating` field on the review form is a `number` input, and the rating of each review is rendered as a number in the review list. This is counterintuitive for users who are accustomed to representing ratings as stars or other symbols that are easily to visually identify at a glance. Given time to implement this, I would like to instead create a system that uses stars to represent ratings.
+
 ### Accessibility
 
 Though significant attention was given to accessibility while implementing this project by adding features such as `htmlFor` on form labels and [Autoprefixer](https://github.com/postcss/autoprefixer) in the Less build phase, there are more optimisations that can potentially be made to improve screen reader and browser compatibility. These include polyfilling language features, transpiling to ES5 using a tool such as Babel, and giving further consideration to ARIA landmarks.
