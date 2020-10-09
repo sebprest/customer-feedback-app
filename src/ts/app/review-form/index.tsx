@@ -14,10 +14,9 @@ export const ReviewForm: React.FunctionComponent<Props> = React.memo(
     const [values, setValues] = useState(defaultValues);
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      const targetName = event.target.name;
-      const targetValue = event.target.value;
+      const { name, value } = event.target;
 
-      setValues((values) => ({ ...values, [targetName]: targetValue }));
+      setValues((values) => ({ ...values, [name]: value }));
     };
 
     const onAddReview = (event: React.FormEvent<HTMLFormElement>) => {
