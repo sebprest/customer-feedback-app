@@ -1,43 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { Review } from "^/common/types";
 import {
   MAXIMUM_REVIEW_RATING,
   MINIMUM_REVIEW_RATING,
   REVIEW_FORM_FIELD_IDS,
 } from "./constants";
+import { FormState } from "./types";
 
 type Props = {
-  addReview: (newReview: Review) => void;
+  addReview: (event: React.FormEvent<HTMLFormElement>) => void;
+  updateFormState: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  formState: FormState;
 };
 
 export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
   (props) => {
-    const defaultValues = { name: "", email: "", rating: 0, comment: "" };
-    const [values, setValues] = useState(defaultValues);
-
-    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      const targetName = event.target.name;
-      const targetValue = event.target.value;
-
-      setValues((values) => ({ ...values, [targetName]: targetValue }));
-    };
-
-    const onAddReview = (event: React.FormEvent<HTMLFormElement>) => {
-      event.preventDefault();
-      props.addReview(values);
-      setValues(() => defaultValues);
-    };
+    const { name, email, rating, comment } = props.formState;
 
     return (
-      <form className="review-form" onSubmit={onAddReview}>
+      <form className="review-form" onSubmit={props.addReview}>
         <label htmlFor={REVIEW_FORM_FIELD_IDS.name}>Name</label>
         <input
           id={REVIEW_FORM_FIELD_IDS.name}
           type="text"
           name="name"
-          value={values.name}
-          onChange={handleInputChange}
+          value={name}
+          onChange={props.updateFormState}
           required
         />
         <label htmlFor={REVIEW_FORM_FIELD_IDS.email}>Email</label>
@@ -45,8 +33,8 @@ export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
           id={REVIEW_FORM_FIELD_IDS.email}
           type="text"
           name="email"
-          value={values.email}
-          onChange={handleInputChange}
+          value={email}
+          onChange={props.updateFormState}
           required
         />
         <label htmlFor={REVIEW_FORM_FIELD_IDS.rating}>Rating</label>
@@ -54,8 +42,8 @@ export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
           type="number"
           id={REVIEW_FORM_FIELD_IDS.rating}
           name="rating"
-          value={values.rating}
-          onChange={handleInputChange}
+          value={rating}
+          onChange={props.updateFormState}
           required
           min={MINIMUM_REVIEW_RATING}
           max={MAXIMUM_REVIEW_RATING}
@@ -64,8 +52,8 @@ export const ReviewFormFields: React.FunctionComponent<Props> = React.memo(
         <input
           id={REVIEW_FORM_FIELD_IDS.comment}
           name="comment"
-          value={values.comment}
-          onChange={handleInputChange}
+          value={comment}
+          onChange={props.updateFormState}
           required
         />
         <input className="button" type="submit" value="Submit" />

@@ -2,7 +2,16 @@
 
 exports[`ReviewForm should render the review form fields with the addReview action passed to it 1`] = `
 <div
-  addReview={[MockFunction]}
+  addReview={[Function]}
+  formState={
+    Object {
+      "comment": "",
+      "email": "",
+      "name": "",
+      "rating": 0,
+    }
+  }
+  updateFormState={[Function]}
 >
   ReviewFormFields
 </div>
