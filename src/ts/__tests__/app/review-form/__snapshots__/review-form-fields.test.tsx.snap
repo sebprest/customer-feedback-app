@@ -3,7 +3,7 @@
 exports[`ReviewFormFields should render the fields for the review form 1`] = `
 <form
   className="review-form"
-  onSubmit={[Function]}
+  onSubmit={[MockFunction]}
 >
   <label
     htmlFor="review-form-name"
@@ -13,10 +13,10 @@ exports[`ReviewFormFields should render the fields for the review form 1`] = `
   <input
     id="review-form-name"
     name="name"
-    onChange={[Function]}
+    onChange={[MockFunction]}
     required={true}
     type="text"
-    value=""
+    value="fake name"
   />
   <label
     htmlFor="review-form-email"
@@ -26,10 +26,10 @@ exports[`ReviewFormFields should render the fields for the review form 1`] = `
   <input
     id="review-form-email"
     name="email"
-    onChange={[Function]}
+    onChange={[MockFunction]}
     required={true}
     type="text"
-    value=""
+    value="fake email"
   />
   <label
     htmlFor="review-form-rating"
@@ -41,10 +41,10 @@ exports[`ReviewFormFields should render the fields for the review form 1`] = `
     max={5}
     min={1}
     name="rating"
-    onChange={[Function]}
+    onChange={[MockFunction]}
     required={true}
     type="number"
-    value={0}
+    value={5}
   />
   <label
     htmlFor="review-form-comment"
@@ -54,9 +54,9 @@ exports[`ReviewFormFields should render the fields for the review form 1`] = `
   <input
     id="review-form-comment"
     name="comment"
-    onChange={[Function]}
+    onChange={[MockFunction]}
     required={true}
-    value=""
+    value="fake comment"
   />
   <input
     className="button"
