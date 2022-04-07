@@ -1,4 +1,4 @@
-# custom-feedback-app
+# customer-feedback-app
 
 A minimal web app that enables users to submit reviews and view a list of reviews that have been written by others.
 
